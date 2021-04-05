@@ -1,10 +1,12 @@
+<?
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「php task.php」をターミナルから実行して下さい。
 
 print("#####q1#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
-  # 以下に回答を記載
+  array_push($names, "斎藤");
+  print_r($names);
 
 echo PHP_EOL;
 
@@ -12,21 +14,32 @@ print("#####q2#####".PHP_EOL);
 $array1 = ["dog", "cat", "fish"];
 $array2 = ["bird", "bat", "tiger"];
 
-  # 以下に回答を記載
+  $array = array_merge($array1, $array2);
+  print_r($array);
 
 echo PHP_EOL;
 
 print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
 
-  # 以下に回答を記載
+  $numbers_count = array_count_values($numbers);
+
+  foreach($numbers_count as $key => $value) {
+    if($key == 3 && $value == 3) {
+      echo 'key : ' . $key;
+      echo '<br>';
+      echo ' value : ' . $value;
+      echo '<br>';
+    }
+  }
 
 echo PHP_EOL;
 
 print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
-  # 以下に回答を記載
+  $sports_unique = array_unique($sports);
+  print_r($sports_unique);
 
 echo PHP_EOL;
 
@@ -75,7 +88,7 @@ $names = ["田中", "佐藤", "佐々木", "高橋"];
 echo PHP_EOL;
 
 print("#####q10#####".PHP_EOL);
-$foods = ["いか","たこ","うに","しゃけ","うにぎり","うに軍艦","うに丼","高級なうに"]];
+$foods = ["いか","たこ","うに","しゃけ","うにぎり","うに軍艦","うに丼","高級なうに"];
 
   # 以下に回答を記載
 
@@ -205,3 +218,5 @@ foreach($humans as $human){
 }
 
 echo PHP_EOL;
+
+?>
