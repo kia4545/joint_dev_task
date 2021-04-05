@@ -5,8 +5,8 @@
 print("#####q1#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
-  array_push($names, "斎藤");
-  print_r($names);
+array_push($names, "斎藤");
+print_r($names);
 
 echo PHP_EOL;
 
@@ -14,32 +14,32 @@ print("#####q2#####".PHP_EOL);
 $array1 = ["dog", "cat", "fish"];
 $array2 = ["bird", "bat", "tiger"];
 
-  $array = array_merge($array1, $array2);
-  print_r($array);
+$array = array_merge($array1, $array2);
+print_r($array);
 
 echo PHP_EOL;
 
 print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
 
-  $numbers_count = array_count_values($numbers);
+$numbers_count = array_count_values($numbers);
 
-  foreach($numbers_count as $key => $value) {
-    if($key == 3 && $value == 3) {
-      echo 'key : ' . $key;
-      echo '<br>';
-      echo ' value : ' . $value;
-      echo '<br>';
-    }
+foreach($numbers_count as $key => $value) {
+  if($key == 3 && $value == 3) {
+    echo 'key : ' . $key;
+    echo '<br>';
+    echo ' value : ' . $value;
+    echo '<br>';
   }
+}
 
 echo PHP_EOL;
 
 print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
-  $sports_unique = array_unique($sports);
-  print_r($sports_unique);
+$sports_unique = array_unique($sports);
+print_r($sports_unique);
 
 echo PHP_EOL;
 
