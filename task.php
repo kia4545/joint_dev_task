@@ -22,46 +22,56 @@ echo PHP_EOL;
 print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
 
-$numbers_count = array_count_values($numbers);
-
-foreach($numbers_count as $key => $value) {
-  if($key == 3 && $value == 3) {
-    echo 'key : ' . $key;
-    echo '<br>';
-    echo ' value : ' . $value;
-    echo '<br>';
+$numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
+$count = 0;
+foreach ($numbers as $numbers) {
+  if ($numbers == 3) {
+    $count++;
   }
 }
+print_r($count . "回です" . PHP_EOL);
 
 echo PHP_EOL;
 
 print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
-
-$sports_unique = array_unique($sports);
-print_r($sports_unique);
-
+$sports = array_diff($sports,array(null));
+print_r($sports);
 echo PHP_EOL;
 
 print("#####q5#####".PHP_EOL);
 $array1 = [];
 $array2 = [1, 5, 8, 10];
 
-  # 以下に回答を記載
+if (empty($array1)) {
+  echo "true";
+} else {
+  echo "false";
+}
+echo PHP_EOL;
+
+if (!empty($array2)) {
+  echo "false";
+} else {
+  echo "true";
+}
 
 echo PHP_EOL;
 
 print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
-  # 以下に回答を記載
-
+  foreach ($numbers1 as $numbers1) {
+  $numbers2[] = $numbers1 * 10;
+  array_push($numbers2);
+}
+print_r($numbers2);
 echo PHP_EOL;
 
 print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
-  # 以下に回答を記載
+  $array = array_map('intval', $array);
 
   # 以下は変更しないで下さい
 var_dump($array);
@@ -71,7 +81,8 @@ echo PHP_EOL;
 print("#####q8#####".PHP_EOL);
 $programming_languages = ["php","ruby","python","javascript"];
 
-  # 以下に回答を記載
+  $upper_case_programming_languages = array_map('strtoupper', $programming_languages);
+  $programming_languages = array_map('ucfirst', $programming_languages);
 
   # 以下は変更しないで下さい
 print_r($programming_languages);
@@ -154,7 +165,7 @@ class User
 $user1 = new User("神里",32,"男");
 $user2 = new User("あじー",32,"男");
 
-$user1->info();
+// $user1->info();
 print("-------------".PHP_EOL);
 $user2->info();
 
