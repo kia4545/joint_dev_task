@@ -22,8 +22,8 @@ echo PHP_EOL;
 print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
 $count = 0;
-foreach ($numbers as $number) {
-  if ($numbers == 3) {
+foreach ($numbers as $value) {
+  if ($value == 3) {
     $count++;
   }
 }
@@ -59,8 +59,8 @@ echo PHP_EOL;
 print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
-foreach ($numbers1 as $numbers) {
-  $numbers2[] = $numbers1 * 10;
+foreach ($numbers1 as $value) {
+  $numbers2[] = $value * 10;
   array_push($numbers2);
 }
 print_r($numbers2);
