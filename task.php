@@ -21,10 +21,8 @@ echo PHP_EOL;
 
 print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
-
-$numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
 $count = 0;
-foreach ($numbers as $numbers) {
+foreach ($numbers as $number) {
   if ($numbers == 3) {
     $count++;
   }
@@ -61,7 +59,7 @@ echo PHP_EOL;
 print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
-  foreach ($numbers1 as $numbers1) {
+foreach ($numbers1 as $numbers) {
   $numbers2[] = $numbers1 * 10;
   array_push($numbers2);
 }
@@ -71,7 +69,7 @@ echo PHP_EOL;
 print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
-  $array = array_map('intval', $array);
+$array = array_map('intval', $array);
 
   # 以下は変更しないで下さい
 var_dump($array);
@@ -81,8 +79,8 @@ echo PHP_EOL;
 print("#####q8#####".PHP_EOL);
 $programming_languages = ["php","ruby","python","javascript"];
 
-  $upper_case_programming_languages = array_map('strtoupper', $programming_languages);
-  $programming_languages = array_map('ucfirst', $programming_languages);
+$upper_case_programming_languages = array_map('strtoupper', $programming_languages);
+$programming_languages = array_map('ucfirst', $programming_languages);
 
   # 以下は変更しないで下さい
 print_r($programming_languages);
