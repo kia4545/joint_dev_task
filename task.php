@@ -177,8 +177,8 @@ print("#####q18#####".PHP_EOL);
 // $man1 = new Man("あじー",32);
 // $man2 = new Man("ゆたぼん",10);
 
-$man1->introduce();
-$man2->introduce();
+// $man1->introduce();
+// $man2->introduce();
 
 echo PHP_EOL;
 
@@ -195,7 +195,7 @@ class Item{
   # 以下は変更しないで下さい
 
 $book = new Item("ゼロ秒思考");
-print($book->name.PHP_EOL);
+// print($book->name.PHP_EOL);
 
 echo PHP_EOL;
 
