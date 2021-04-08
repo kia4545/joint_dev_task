@@ -58,6 +58,7 @@ echo PHP_EOL;
 
 print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
+$numbers2 = [];
 
 foreach ($numbers1 as $value) {
   $numbers2[] = $value * 10;
