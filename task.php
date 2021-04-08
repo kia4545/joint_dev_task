@@ -1,4 +1,4 @@
-<?
+<?php
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「php task.php」をターミナルから実行して下さい。
 
@@ -166,7 +166,7 @@ $user2 = new User("あじー",32,"男");
 
 // $user1->info();
 print("-------------".PHP_EOL);
-$user2->info();
+// $user2->info();
 
 echo PHP_EOL;
 
@@ -174,8 +174,8 @@ print("#####q18#####".PHP_EOL);
 
   # コードを追加
 
-$man1 = new Man("あじー",32);
-$man2 = new Man("ゆたぼん",10);
+// $man1 = new Man("あじー",32);
+// $man2 = new Man("ゆたぼん",10);
 
 $man1->introduce();
 $man2->introduce();
@@ -224,7 +224,7 @@ $human4 = new Human("ぎん",108);
 $humans = [ $human1, $human2, $human3, $human4 ];
 
 foreach($humans as $human){
-  $zoo->info_entry_fee($human);
+  // $zoo->info_entry_fee($human);
 }
 
 echo PHP_EOL;
