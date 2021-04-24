@@ -284,9 +284,9 @@ class Man
   function introduce()
   {
     if ($this->age == 10) {
-      echo ("はいさいまいど～:" . $this->name . "です！！！" . PHP_EOL);
+      echo ("はいさいまいど～," . $this->name . "です！！！" . PHP_EOL);
     } else {
-      echo ("こんにちは,:" . $this->name . "と申します。宜しくお願いいたします" . PHP_EOL);
+      echo ("こんにちは," . $this->name . "と申します。宜しくお願いいたします" . PHP_EOL);
     }
   }
 }
