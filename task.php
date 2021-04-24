@@ -261,9 +261,9 @@ class User
 $user1 = new User("神里",32,"男");
 $user2 = new User("あじー",32,"男");
 
-// $user1->info();
+$user1->info();
 print("-------------".PHP_EOL);
-// $user2->info();
+$user2->info();
 
 echo PHP_EOL;
 
@@ -291,11 +291,11 @@ class Man
   }
 }
 
-// $man1 = new Man("あじー",32);
-// $man2 = new Man("ゆたぼん",10);
+$man1 = new Man("あじー",32);
+$man2 = new Man("ゆたぼん",10);
 
-// $man1->introduce();
-// $man2->introduce();
+$man1->introduce();
+$man2->introduce();
 
 echo PHP_EOL;
 
@@ -312,7 +312,7 @@ class Item{
   # 以下は変更しないで下さい
 
 $book = new Item("ゼロ秒思考");
-// print($book->name.PHP_EOL);
+print($book->name.PHP_EOL);
 
 echo PHP_EOL;
 
