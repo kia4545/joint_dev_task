@@ -156,7 +156,23 @@ print("#####q17#####".PHP_EOL);
 class User
 {
 
-  # コードを追加
+  protected $name;
+  protected $age;
+  protected $gender;
+
+  function __construct($user_name, $user_age, $user_gender)
+  {
+    $this->name = $user_name;
+    $this->age = $user_age;
+    $this->gender = $user_gender;
+  }
+
+  function info()
+  {
+    echo ("名前:" . $this->name . PHP_EOL);
+    echo ("年齢:" . $this->age . PHP_EOL);
+    echo ("年齢:" . $this->gender . PHP_EOL);
+  }
 
 }
 
@@ -170,8 +186,28 @@ $user2->info();
 echo PHP_EOL;
 
 print("#####q18#####".PHP_EOL);
+class Man
+{
 
-  # コードを追加
+  protected $name;
+  protected $age;
+
+
+  function __construct($user_name, $user_age)
+  {
+    $this->name = $user_name;
+    $this->age = $user_age;
+  }
+
+  function introduce()
+  {
+    if ($this->age == 10) {
+      echo ("はいさいまいど～:" . $this->name . "です！！！" . PHP_EOL);
+    } else {
+      echo ("こんにちは,:" . $this->name . "と申します。宜しくお願いいたします" . PHP_EOL);
+    }
+  }
+}
 
 $man1 = new Man("あじー",32);
 $man2 = new Man("ゆたぼん",10);
@@ -185,7 +221,7 @@ print("#####q19#####".PHP_EOL);
 class Item{
   # 以下を修正して下さい
 
-  protected $name;
+  public $name;
 
   function __construct($book_name){
     $this->name = $book_name;
