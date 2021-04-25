@@ -253,7 +253,7 @@ class User
   {
     echo ("名前:" . $this->name . PHP_EOL);
     echo ("年齢:" . $this->age . PHP_EOL);
-    echo ("年齢:" . $this->gender . PHP_EOL);
+    echo ("性別:" . $this->gender . PHP_EOL);
   }
 
 }
@@ -345,5 +345,3 @@ foreach($humans as $human){
 }
 
 echo PHP_EOL;
-
-?>
