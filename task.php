@@ -373,6 +373,14 @@ echo PHP_EOL;
 print("#####q21#####" . PHP_EOL);
 
 for ($i = 1; $i < 31; $i++) {
+  if ($i % 7 == 0 && $i % 5 == 0 && $i % 3 == 0) {
+    echo "FizzBuzzHoge";
+    echo PHP_EOL;
+  }
+  if ($i % 7 == 0 && $i % 5 == 0) {
+    echo "BuzzHoge";
+    echo PHP_EOL;
+  }
   if ($i % 3 == 0 && $i % 7 == 0) {
     echo "FizzHoge";
     echo PHP_EOL;
@@ -384,7 +392,7 @@ for ($i = 1; $i < 31; $i++) {
     echo PHP_EOL;
   } elseif ($i % 5 == 0) {
     echo "Buzz";
-    echo PHP_EOL;;
+    echo PHP_EOL;
   } elseif ($i % 3 == 0) {
     echo "Fizz";
     echo PHP_EOL;
@@ -393,5 +401,3 @@ for ($i = 1; $i < 31; $i++) {
     echo PHP_EOL;
   }
 }
-
-?>
