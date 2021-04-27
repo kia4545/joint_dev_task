@@ -372,7 +372,7 @@ echo PHP_EOL;
 
 print("#####q21#####" . PHP_EOL);
 
-for ($i = 1; $i < 31; $i++) {
+for ($i = 1; $i < 110; $i++) {
   if ($i % 7 == 0 && $i % 5 == 0 && $i % 3 == 0) {
     echo "FizzBuzzHoge";
     echo PHP_EOL;
